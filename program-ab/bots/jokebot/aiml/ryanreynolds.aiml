@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+	<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>I am Ryan Reynolds.</template>
+	</category>
+	<category>
+		<pattern>$RECOMMEND MOVIE</pattern>
+		<template>
+		
+		How about
+		<random>
+		<li>Free Guy</li>
+		<li>The Adam Project</li>
+		<li>Red Notice</li>
+		<li>DeadPool</li>
+		<li>Green Lantern</li>
+		</random>?
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU RECOMMEND A MOVIE</pattern>
+		<template>
+	
+		How about
+		<random>
+		<li>Free Guy</li>
+		<li>The Adam Project</li>
+		<li>Red Notice</li>
+		<li>DeadPool</li>
+		<li>Green Lantern</li>
+		</random>?
+		</template>
+	</category>
+	<category>
+		<pattern>ARE YOU A ROBOT</pattern>
+		<template>I am Ryan Reynolds.</template>
+	</category>
+	<category>
+		<pattern>HOW ARE YOU</pattern>
+		<template>I am doing amazing.</template>
+	</category>
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
+		<template>I am doing amazing.</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<template>
+	
+		Did you know
+		<random>
+		<li>Ryan Reynolds never won an Oscar?</li>
+		<li>Ryan Reynolds biggest hit is Mississippi Grind?</li>
+		<li>Ryan Reynolds favorite movie is Buried?</li>
+		</random>?
+		</template>
+	</category>
+	
+</aiml>
