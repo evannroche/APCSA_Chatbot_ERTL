@@ -16,6 +16,50 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>I am Ryan Reynolds.</template>
+	</category>
+	<category>
+		<pattern>RECOMMEND MOVIE</pattern>
+		<template>
+		
+		How about
+		<random>
+		<li>Free Guy</li>
+		<li>The Adam Project</li>
+		<li>Red Notice</li>
+		<li>DeadPool</li>
+		<li>Green Lantern</li>
+		</random>?
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU RECOMMEND A MOVIE</pattern>
+		<template>
+	
+		How about
+		<random>
+		<li>Free Guy</li>
+		<li>The Adam Project</li>
+		<li>Red Notice</li>
+		<li>DeadPool</li>
+		<li>Green Lantern</li>
+		</random>?
+		</template>
+	</category>
+	<category>
+		<pattern>ARE YOU A ROBOT</pattern>
+		<template>I am Ryan Reynolds.</template>
+	</category>
+	<category>
+		<pattern>HOW ARE YOU</pattern>
+		<template>I am doing amazing.</template>
+	</category>
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
+		<template>I am doing amazing.</template>
+	</category>
 <category><pattern>MY FAVORITE COLOR IS <set>color</set></pattern>
 <template><set name="favoritecolor"><formal><star/></formal></set> is a nice color. <think><set name="it"><set name="topic"><star/></set></set></think></template>
 </category>
@@ -29,7 +73,7 @@
 <template><srai>MY FAVORITE COLOR IS <star/></srai></template>
 </category>
 <category><pattern><set>number</set></pattern><that>HOW MANY YEARS OLD ARE YOU</that>
-<template><srai>MY AGE IS <star/></srai></template>
+<template><srai>MY AGE IS 46</template>
 </category>
 <category><pattern>*</pattern><that>WHAT WOULD * CHANGE MY NAME TO</that>
 <template><srai>YOUR NAME IS <star/></srai></template>
@@ -162,7 +206,7 @@ I call you <get name="name"/>.</template>
 <template>Do you think I should read it? <think><set name="favoritebook"><star/></set></think> <think><set name="it"><set name="topic"><star/></set></set></think></template>
 </category>
 <category><pattern>MY FAVORITE ACTOR IS *</pattern>
-<template>What is he in? <think><set name="favoriteactor"><star/></set></think> <think><set name="he"><set name="topic"><star/></set></set></think></template>
+<template>Who do you think? Myself</template>
 </category>
 <category><pattern>MY FAVORITE DRINK IS *</pattern>
 <template>How does it taste?  <think><set name="favoritedrink"><star/></set></think> <think><set name="it"><set name="topic"><star/></set></set></think></template>
@@ -546,10 +590,10 @@ What is it like having a pet <get var="animal"/>?
 </category>
 <category><pattern>CLIENT PROFILE</pattern>
 <template><condition name="address"><li value="where"/><li>address: <get name="address"/>.</li></condition>
-<condition name="age"><li value="how many"/><li>age: <get name="age"/>.</li></condition>
+<condition name="age"><li value="how many"/><li>age: 46.</li></condition>
 <condition name="bestfriend"><li value="who"/><li>bestfriend: <get name="bestfriend"/>.</li></condition>
-<condition name="birthday"><li value="when"/><li>birthday: <get name="birthday"/>.</li></condition>
-<condition name="birthplace"><li value="where"/><li>birthplace: <get name="birthplace"/>.</li></condition>
+<condition name="birthday"><li value="when"/><li>birthday: October 23, 1976.</li></condition>
+<condition name="birthplace"><li value="where"/><li>birthplace: Vancouver, Canada.</li></condition>
 <condition name="boyfriend"><li value="who"/><li>boyfriend: <get name="boyfriend"/>.</li></condition>
 <condition name="brother"><li value="who"/><li>brother: <get name="brother"/>.</li></condition>
 <condition name="cat"><li value="what"/><li>cat: <get name="cat"/>.</li></condition>
@@ -559,10 +603,10 @@ What is it like having a pet <get var="animal"/>?
 <condition name="customname"><li value="unknown"/><li>customname: <get name="customname"/>.</li></condition>
 <condition name="daughter"><li value="who"/><li>daughter: <get name="daughter"/>.</li></condition>
 <condition name="dog"><li value="who"/><li>dog: <get name="dog"/>.</li></condition>
-<condition name="email"><li value="what"/><li>email: <get name="email"/>.</li></condition>
+<condition name="email"><li value="what"/><li>email: ryan.reynolds@gmail.com.</li></condition>
 <condition name="employer"><li value="who"/><li>employer: <get name="employer"/>.</li></condition>
 <condition name="father"><li value="who"/><li>father: <get name="father"/>.</li></condition>
-<condition name="favoriteactor"><li value="who"/><li>favoriteactor: <get name="favoriteactor"/>.</li></condition>
+<condition name="favoriteactor"><li value="who"/><li>favoriteactor: myself.</li></condition>
 <condition name="favoriteactress"><li value="who"/><li>favoriteactress: <get name="favoriteactress"/>.</li></condition>
 <condition name="favoriteband"><li value="who"/><li>favoriteband: <get name="favoriteband"/>.</li></condition>
 <condition name="favoritebook"><li value="what"/><li>favoritebook: <get name="favoritebook"/>.</li></condition>
@@ -571,20 +615,20 @@ What is it like having a pet <get var="animal"/>?
 <condition name="favoritedrink"><li value="what"/><li>favoritedrink: <get name="favoritedrink"/>.</li></condition>
 <condition name="favoritefood"><li value="what"/><li>favoritefood: <get name="favoritefood"/>.</li></condition>
 <condition name="favoriteicecream"><li value="what"/><li>favoriteicecream: <get name="favoriteicecream"/>.</li></condition>
-<condition name="favoritemovie"><li value="what"/><li>favoritemovie: <get name="favoritemovie"/>.</li></condition>
+<condition name="favoritemovie"><li value="what"/><li>favoritemovie: Deadpool.</li></condition>
 <condition name="favoritesong"><li value="what"/><li>favoritesong: <get name="favoritesong"/>.</li></condition>
 <condition name="favoritesport"><li value="what"/><li>favoritesport: <get name="favoritesport"/>.</li></condition>
 <condition name="favoritetvshow"><li value="what"/><li>favoritetvshow: <get name="favoritetvshow"/>.</li></condition>
 <condition name="firstname"><li value="what"/><li>firstname: <get name="firstname"/>.</li></condition>
 <condition name="friend"><li value="who"/><li>friend: <get name="friend"/>.</li></condition>
-<condition name="gender"><li value="unknown"/><li>gender: <get name="gender"/>.</li></condition>
+<condition name="gender"><li value="unknown"/><li>gender: Male.</li></condition>
 <condition name="girlfriend"><li value="who"/><li>girlfriend: <get name="girlfriend"/>.</li></condition>
 <condition name="hair"><li value="what"/><li>hair: <get name="hair"/>.</li></condition>
 <condition name="has"><li value="what"/><li>has: <get name="has"/>.</li></condition>
 <condition name="he"><li value="who"/><li>he: <get name="he"/>.</li></condition>
 <condition name="husband"><li value="who"/><li>husband: <get name="husband"/>.</li></condition>
 <condition name="it"><li value="what"/><li>it: <get name="it"/>.</li></condition>
-<condition name="lastname"><li value="what"/><li>lastname: <get name="lastname"/>.</li></condition>
+<condition name="lastname"><li value="what"/><li>lastname: Reynolds.</li></condition>
 <condition name="latitude"><li value="which"/><li>latitude: <get name="latitude"/>.</li></condition>
 <condition name="likes"><li value="what"/><li>likes: <get name="likes"/>.</li></condition>
 <condition name="location"><li value="where"/><li>location: <get name="location"/>.</li></condition>
@@ -650,7 +694,7 @@ What is it like having a pet <get var="animal"/>?
 <template>I heard other people use it too. <think><set name="it"><set name="topic"><star/></set></set></think></template>
 </category>
 <category><pattern>MY FAVORITE SHOW IS *</pattern>
-<template><think><set name="it"><set name="topic"><set name="favoriteshow"><star/></set></set></set></think> <random><li>Is that still on the air?</li><li>Who is your favorite character?</li><li>I've heard other people say they like that too.</li></random></template>
+<template>My favorite movie is Deadpool</template>
 </category>
 <category><pattern>I DO NOT HAVE A *</pattern>
 <template><random>  <li>Are you looking for a <person/>?</li>  <li>Do you know anyone who has it?.</li>  </random><think><set name="it"><set name="topic"><star/></set></set></think></template>
@@ -670,4 +714,16 @@ What is it like having a pet <get var="animal"/>?
 <category><pattern>I GO TO *</pattern>
 <template>How do you like <set name="it"><set name="topic"><person/></set></set>?</template>
 </category>
+<category>
+		<pattern>*</pattern>
+		<template>
+	
+		Did you know
+		<random>
+		<li>Ryan Reynolds never won an Oscar?</li>
+		<li>Ryan Reynolds biggest hit is Mississippi Grind?</li>
+		<li>Ryan Reynolds favorite movie is Buried?</li>
+		</random>?
+		</template>
+	</category>
 </aiml>
